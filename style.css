@@ -61,6 +61,24 @@ body {
     text-align: right;
 }
 
+
+@media (max-width: 550px) {
+    .navbar .navbar-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar .navbar-container .site-title {
+        padding-bottom: 6px;
+    }
+    
+    .navbar .navbar-container .site-type {
+        padding-bottom: 6px;
+    }
+    .navbar .navbar-container .site-year {
+        text-align: left;
+    }
+}
+
 /* header */
 .header {
     margin: 100px 0;
@@ -74,8 +92,9 @@ body {
 
 .header .header-container h1 {
     font-family: "IBMPlexMono-Light";
-    font-weight: 400;
-    font-size: 4rem;
+    font-weight: 500;
+    font-size: 4.5rem;
+
 }
 
 @media (max-width: 900px) {
@@ -113,7 +132,7 @@ body {
     /* opacity: ; */
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .hero-image {
         margin-top: 40px;
     }
@@ -121,6 +140,12 @@ body {
         width: 100%;
     }
 }
+
+@media (max-width: 375px) {
+
+}
+
+
 
 /* section-header */
 .section-header .section-header-container {
