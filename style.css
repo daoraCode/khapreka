@@ -1,0 +1,238 @@
+/* khapreca 2020.1 Severin Mboukou // folio */
+
+*, a {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Sk-Modernist";
+    color: #DDD4BB;
+    text-decoration: none;
+}
+
+html, 
+body {
+    overflow-x: hidden;
+    background: #0C0C0C;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .container {
+    width: 92%;
+    margin: 0px auto;
+}
+
+/* line separators */
+.divider {
+    width: 100%;
+    height: 2px;
+    background: #DDD4BB;
+}
+
+/* .whitespace {
+    width: 100%;
+    height: 50px;
+} */
+
+
+/* navbar */
+.navbar .navbar-container {
+    display: flex;
+    padding: 12px 0;
+    font-size: 17px;
+    justify-content: space-between;
+}
+
+.navbar .navbar-container .site-title {
+    flex-grow: 1;
+}
+
+.navbar .navbar-container .site-type {
+    flex-grow: 1;
+}
+
+.navbar .navbar-container .site-year {
+    flex-grow: 2;
+    text-align: right;
+}
+
+/* header */
+.header {
+    margin: 100px 0;
+    z-index: 2 !important;
+}
+
+.header .header-container {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.header .header-container h1 {
+    font-family: "IBMPlexMono-Light";
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+@media (max-width: 900px) {
+    .header .header-container {
+        width: 50%;
+        padding: 25px 0;
+    }
+
+    .header .header-container h1{
+        font-size: 2.5rem;
+        justify-content: left;
+    }
+}
+
+
+/* hero-image */
+.hero-image {
+    width: 100%;
+    margin-top: -520px;
+}
+
+.hero-image::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hero-image .hero-image-container {
+    width: 30%;
+    float: right;
+}
+
+.hero-image .hero-image-container img {
+    width: 100%;
+    /* opacity: ; */
+}
+
+@media (max-width: 900px) {
+    .hero-image {
+        margin-top: 40px;
+    }
+    .hero-image .hero-image-container {
+        width: 100%;
+    }
+}
+
+/* section-header */
+.section-header .section-header-container {
+    display: flex;
+    padding: 14px 0;
+    font-size: 17px;
+    justify-content: space-between;
+}
+
+/* about */
+
+.about {
+    width: 100%;
+}
+
+.about::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.about .about-container {
+    width: 100%;
+    float: none;
+}
+
+
+.about .about-container p {
+    margin: 40px 0;
+    font-size: 34px;
+}
+
+
+@media (max-width: 900px) {
+    .about .about-container {
+        width: 100%;
+    }
+
+    .about .about-container p {
+        font-size: 20px;
+    }
+}
+
+.menu__item {
+    position: relative;
+    padding: 1.6vw 0 0 0;
+    margin: 4px;
+}
+
+.menu__item-link {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    color: beige;
+    transition: opacity 0.4s;
+    font-family: "IBMPlexMono-Light";
+    text-transform: uppercase;
+}
+
+
+/* .menu__item-link:hover {
+    transition-duration: 0.1s;
+    opacity: 0;
+}
+
+.menu__item-img {
+    pointer-events: none;
+    position: absolute;
+    height: 50vh;
+    max-height: 400px;
+    opacity: 0;
+    left: 100%;
+    top: 50%;
+    transform: translate3d(calc(-100% - 6vw), -30%, 0), translate3d(0, 20px, 0);
+}
+
+.menu__item-link:hover + .menu__item-img {
+    opacity: 1;
+    transform: translate3d(calc(-100% - 6vw), -30%, 0), rotate3d(0, 0, 1, 4deg);
+    transition: all 0.4s;
+}
+
+
+.menu {
+
+    padding: 0vh 0 0 0vh;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+    font-size: 8vw;
+
+}
+
+
+.voan {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: whitesmoke;
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+.voan__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    animation: voan 5s linear infinite;
+    animation-play-state: paused;
+    opacity: 0;
+    transition: opacity 0.1s;
+    padding: 2vw 0;
+} */
