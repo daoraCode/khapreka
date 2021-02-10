@@ -5,16 +5,20 @@
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: "Sk-Modernist";
+    font-family: "sk-modernist-regular";
     color: #DDD4BB;
     text-decoration: none;
+}
+
+p {
+    font-size: 34px;
 }
 
 html, 
 body {
     overflow-x: hidden;
-    background: #0C0C0C;
-    scroll-behavior: smooth;
+    background: #141414;
+    scroll-behavior: auto;
 }
 
 .wrapper {
@@ -30,15 +34,14 @@ body {
 /* line separators */
 .divider {
     width: 100%;
-    height: 2px;
+    height: 1.5px;
     background: #DDD4BB;
 }
 
 .whitespace {
-    width: auto;
-    height: 10px;
-    background: url(/banner-khapreka.png);
-    margin: 70px auto;
+    background:#DDD4BB;
+    height: 2px;
+    margin: 90px auto;
 }
 
 
@@ -81,7 +84,7 @@ body {
     }
 }
 
-/* header */
+/* hero */
 .header {
     margin: 100px 0;
     z-index: 2 !important;
@@ -93,9 +96,9 @@ body {
 }
 
 .header .header-container h1 {
-    font-family: "IBMPlexMono-Light";
-    font-weight: 500;
-    font-size: 4.5rem;
+    color: #F8406C;
+    font-size: 6.59rem;
+    font-style: italic;
 
 }
 
@@ -106,7 +109,7 @@ body {
     }
 
     .header .header-container h1{
-        font-size: 2.5rem;
+        font-size: 60px;
         justify-content: left;
     }
 }
@@ -115,7 +118,7 @@ body {
 /* hero-image */
 .hero-image {
     width: 100%;
-    margin-top: -520px;
+    margin-top: -700px;
 }
 
 .hero-image::after {
@@ -131,10 +134,9 @@ body {
 
 .hero-image .hero-image-container img {
     width: 100%;
-    /* opacity: ; */
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1575px) {
     .hero-image {
         margin-top: 40px;
     }
@@ -170,7 +172,6 @@ body {
 
 .about .about-container p {
     margin: 40px 0;
-    font-size: 34px;
 }
 
 
@@ -181,6 +182,7 @@ body {
 
     .about .about-container p {
         font-size: 20px;
+        text-align: center;
     }
 }
 
@@ -194,14 +196,11 @@ body {
     display: inline-block;
     cursor: pointer;
     position: relative;
-    color: beige;
-    transition: opacity 0.4s;
     font-size: 25px;
-    font-family: "IBMPlexMono-Light";
 }
 
 
-/* git */
+/* git project */
 .git {
     width: 100%;
     background: #0C0C0C;
@@ -221,12 +220,6 @@ body {
 .git .git-container-1 img {
     width: 100%;
     margin: 25px auto;
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out ;
-}
-
-.git .git-container-1:hover img {
-    width: 125%;
 }
 
 .git .git-container-2 {
@@ -237,34 +230,56 @@ body {
 }
 
 .git .git-container-2 h2 {
+    margin-top: 45px;
     padding: 20px 20px 20px 20px;
     color: #F8406C;
-    font-size: 2.55rem;
-    
+    font-size: 50px;  
 }
 
 .git .git-container-2 p {
-    padding: 20px 20px 20px 20px;
-    line-height: 1.30em;
-    color: #fff;
-    font-weight: 600;
-    font-size: 2.0em;
-    overflow: scroll;
+    padding: 20px 0 20px 20px;
 }
 
-
-@media (max-width: 1286px) {
+@media only screen and (max-width: 1286px) {
     .git .git-container-1 {
         width: 100%;
     }
-
     .git .git-container-2 {
         width: 100%;
         align-items: center;
     }
+    .git .git-container-2 h2 {
+        font-size: 34px;
+        text-align: center; 
+    }
+    .git .git-container-2 p {
+        font-size: 34px;
+        text-align: center;
+    }
 }
 
-/* capture */
+@media (max-width: 768.9px) {
+    .git .git-container-1 {
+        width: 100%;
+    }
+    .git .git-container-2 {
+        width: 100%;
+        align-items: center;
+    }
+    .git .git-container-2 h2 {
+        padding: 0 20px 20px;
+        font-size: 25px;
+        text-align: center; 
+    }
+    .git .git-container-2 p {
+        margin-bottom: 21px;
+        font-size: 20px;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+/* capture project */
 .capture {
     width: 100%;
     background: #0C0C0C;
@@ -301,32 +316,64 @@ body {
 }
 
 .capture .capture-container-2 p {
-    padding: 13px 13px 13px 13px;
-    line-height: 1.30em;
-    color: #fff;
-    font-weight: 600;
-    font-size: 2em;
+    padding: 20px 20px 20px 20px;
+    font-size: 2.0em;
 }
 
-@media (max-width: 1509px) {
-    .capture .capture-container-1 {
-        width: 100%;
-    }
-    .capture .capture-container-2 {
-        width: 100%;
-        align-items: center;
-    }
+
+@media only screen and (min-width: 1286px) {
     .capture .capture-container-2 h2 {
-        font-size: (calc(3em / 2));
+        padding: 0 20px 20px;
+        font-size: 34px;
+        text-align: center; 
     }
     .capture .capture-container-2 p {
-        font-size: (calc(2em / 2));
+        margin-bottom: 21px;
+        font-size: 34px;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1530px) {
+    .capture .capture-container-1 {
+        min-width: 100%;
+    }
+    .capture .capture-container-2 {
+        min-width: 100%;
+        align-items: center;
+        padding-left: 0;
+    }
+
+}
+
+@media (max-width: 768.9px) {
+
+    .capture .capture-container-1 {
+        min-width: 100%;
+    }
+    .capture .capture-container-2 {
+        min-width: 100%;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .capture .capture-container-2 h2 {
+        padding: 0 20px 20px;
+        font-size: 24px;
+        text-align: center; 
+    }
+
+    .capture .capture-container-2 p {
+        margin-bottom: 21px;
+        font-size: 20px;
+        padding: 0;
+        text-align: center;
     }
 }
 
 
-
-/* socials */
+/* socials media settings */
 .social {
     padding: 20px 0;
 }
@@ -338,23 +385,41 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    padding-bottom: 11px;
 }
 
 .social .social-container a {
     cursor: pointer;
     text-decoration: none;
-    font-family: "IBMPlexSans-Thin";
-    font-size: 64px;
+    font-size: 72px;
 }
 
-@media (max-width: 1150px) {
+.ln a {
+    color: rgb(27, 78, 245);
+}
+
+.be a {
+    color: rgb(245, 27, 92);
+}
+
+.ig a {
+    color: rgb(255, 208, 0);
+}
+
+.tw a {
+    color: rgb(97, 188, 248);
+}
+
+
+
+@media (max-width: 1319px) {
     .social .social-container {
         flex-direction: column;
         align-items: center;
     }
     .social .social-container a {
         margin-bottom: 10%;
-        font-size: 34.9px;
+        font-size: 4.7rem;
     }
 }
 
@@ -371,5 +436,11 @@ body {
         margin-bottom: 15px;
         display: flex;
         flex-direction: column;
+    }  
+}
+
+@media (max-width: 858.9px) {
+    .footer .navbar .navbar-container .site-year {
+        padding: 40px auto;
     }
 }
